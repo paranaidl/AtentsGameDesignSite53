@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="이 사이트에 대한 구체적인 소개를 적으시면 됩니다.">
+  <meta name="author" content="이 페이지의 저자로서 이니셜이나 머릿말 정도를 적으세요, 이름이나 이니셜을 적으세요.">
+  <meta name="generator" content="제작도구에 대한 설명을 적으세요.">
+  <title>HOME</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="사이트 이름을 적으세요." />
+  <meta property="og:title" content="타이틀 이름을 적으세요." />
+  <meta property="og:description" content="자신의 사이트에 대한 세부 설명을 적으세요." />
+  <meta property="og:image" content="./images/name_seo.png" />
+  <!-- 아텐츠주소 대신 자신의 웹페이지 주소로 바꾸세요 -->
+  <meta property="og:url" content="https://atentsgame.com" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="사이트 이름을 적으세요." />
+  <meta property="twitter:title" content="타이틀 이름을 적으세요." />
+  <meta property="twitter:description" content="자신의 사이트에 대한 세부 설명을 적으세요." />
+  <meta property="twitter:image" content="./images/name_seo.jpg" />
+  <!-- 아텐츠주소 대신 자신의 웹페이지 주소로 바꾸세요 -->
+  <meta property="twitter:url" content="https://atentsgame.com" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="./main.css">
+  <script defer src="./main.js"></script>
+</head>
+
+<body>
+  <!-- Game canvas -->
+  <canvas id="c"></canvas>
+
+  <!-- Gameplay HUD -->
+  <div class="hud">
+    <div class="hud__score">
+      <div class="score-lbl"></div>
+      <div class="cube-count-lbl"></div>
+    </div>
+    <div class="pause-btn">
+      <div></div>
+    </div>
+    <div class="slowmo">
+      <div class="slowmo__bar"></div>
+    </div>
+  </div>
+
+  <!-- Menu System -->
+  <div class="menus">
+    <div class="menu menu--main">
+      <h1>큐브깨기</h1>
+      <button type="button" class="play-normal-btn">게임시작</button>
+      <button type="button" class="play-casual-btn">캐쥬얼모드</button>
+      <h1>
+        <div class="credits">기획서를 보시려면 <a href="/pages/mainpage.html">여기클릭!</a></div>
+      </h1>
+    </div>
+    <div class="menu menu--pause">
+      <h1>일시정지</h1>
+      <button type="button" class="resume-btn">재시작</button>
+      <button type="button" class="menu-btn--pause">메인메뉴</button>
+    </div>
+    <div class="menu menu--score">
+      <h1>Game Over</h1>
+      <h2>점수:</h2>
+      <div class="final-score-lbl"></div>
+      <div class="high-score-lbl"></div>
+      <button type="button" class="play-again-btn">재도전</button>
+      <button type="button" class="menu-btn--score">메인메뉴</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
